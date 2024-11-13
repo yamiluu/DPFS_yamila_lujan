@@ -18,4 +18,8 @@ Los sitios web de referencia que fueron elegidos son:
 
 3. Net-a-Porter: https://www.net-a-porter.com/en-ie/ tiene un diseño visual de lujo y excelente experiencia de compra, con recomendaciones y estilo editorial que mantiene a los usuarios interesados. Útil para ideas de funcionalidad y branding de lujo.
 
-4. Mr Porter: https://www.mrporter.com/en-ie/ 
+4. Mr Porter: https://www.mrporter.com/en-ie/ nos sirve de inspiración ya que es una marca que se dedica al lujo clasico y moderno, con un enfoque en marcas de alto nivel y una estética limpia. Tiene un buen balance entre moda y contenido de valor añadido, como guías de estilo, lo que mejora la atención del cliente y refuerza la imagen de marca.
+
+5. Matches Fashion: https://www.flannels.com/ tiene una excelente experiencia de usuario, su diseño es intuitivo y atractivo, con recomendaciones basadas en preferencias y un sistema de entrega que incluye opciones de empaques personalizados.
+
+6. Otros sitios web de marcas que tambien podriamos tomar en cuenta, aunque algunas no precisamente se centran en el estilo "Old Money" y tienen un publico más amplio pero ofrecen buenas ideas para construir una experiencia de usuario que mantenga al cliente enganchado a través de la estética y la identidad de marca. Pueden ser "Rapsodia", "Vitamina", "Zara" o "H&M", nos pueden ayudar a tomar inspiración en como presentan sus colecciones, con un diseño de la interfaz cuidada y minimalista, que valoran la exclusividad y el lujo discreto. 

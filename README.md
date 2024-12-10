@@ -23,3 +23,5 @@ Los sitios web de referencia que fueron elegidos son:
 5. Matches Fashion: https://www.flannels.com/ tiene una excelente experiencia de usuario, su diseño es intuitivo y atractivo, con recomendaciones basadas en preferencias y un sistema de entrega que incluye opciones de empaques personalizados.
 
 6. Otros sitios web de marcas que tambien podriamos tomar en cuenta, aunque algunas no precisamente se centran en el estilo "Old Money" y tienen un publico más amplio pero ofrecen buenas ideas para construir una experiencia de usuario que mantenga al cliente enganchado a través de la estética y la identidad de marca. Pueden ser "Rapsodia", "Vitamina", "Zara" o "H&M", nos pueden ayudar a tomar inspiración en como presentan sus colecciones, con un diseño de la interfaz cuidada y minimalista, que valoran la exclusividad y el lujo discreto. 
+
+TABLERO DE TRABAJO (TRELLO)= https://trello.com/invite/b/67584c4527720b180739deb8/ATTI9c61d38711ad70cc9fc2a6d98a1852d9CC39D913/programacion-full-stack-digital-house

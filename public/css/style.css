@@ -1,0 +1,198 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8de;
+}
+
+/* EL HEADER Y FOOTER: */
+header, footer {
+  background-color: #731702;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+header a, footer a {
+  color: #fff8de;
+  text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+  color: #8c6849; /* Cambia el color al pasar el mouse */
+}
+
+/* Buscador: 
+.buscador {
+  width: 400px;
+  border: 2px solid #fff8de;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+} */
+
+/* CARROSEL: 
+.carousel-item {
+/*  max-height: 1000px;  Limita la altura */
+ /* overflow: hidden;  Oculta contenido que desborde */
+/*}
+*/
+
+/* CATEGORIAS: */
+.categorias {
+  background-color: #d9bba0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.categorias a {
+  color: #731702;
+  text-decoration: none;
+}
+
+/* ESTILO GENERAL - LOGIN */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGIN Y REGISTRO: */
+.login-register {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+
+.login-register a {
+  color: #8c6849;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  font-size: 25px;
+}
+
+.login-register a.active {
+  border-bottom: 2px solid #8c6849; /* Subrayado para el activo */
+}
+
+.login-register a:hover {
+  border-bottom: 2px solid #8c6849;
+}
+
+/* FORMULARIO - LOGIN */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  background-color: #8c6849;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  width: 35%;
+  padding: 8px;
+  background-color: #fff8de;
+  color: #8c6849;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #cf9d72;
+}
+
+/* OLVIDAR CONTRASEÑA - LOGIN */
+form a {
+  color: #fff8de;
+  font-size: 15px;
+  margin: 0;
+  margin-right: 200px;
+  padding-bottom: 25px;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+form a:hover {
+  text-decoration: underline;
+  color: #cf9d72;
+}
+
+/* ICONOS - LOGIN*/
+form img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+form img:hover {
+  filter: brightness(80%);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.social-icons::before,
+.social-icons::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #8c6849;
+}
+
+.social-icons::before {
+  margin-right: 15px; /* Espaciado entre la línea izquierda y el primer icono. */
+}
+
+.social-icons::after {
+  margin-left: 15px; /* Espaciado entre la línea derecha y el último icono. */
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #fff8de;
+  border: 2px solid #8c6849;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 15px;
+}
+.social-icons img {
+  padding-top: 60px;
+}
+
+/* REGISTER: */
+.checkbox {
+  color: #fff8de;
+  font-size: 20px;
+}

@@ -1,0 +1,11 @@
+const express = require('express');
+const router = express.Router();
+const userController = require('../controllers/userController');
+
+router.get('/create', userController.create);
+router.post('/', userController.store);
+router.get('/:email/edit', userController.edit);
+router.put('/:email', userController.update);
+router.get('/:email', userController.detail);
+
+module.exports = router;

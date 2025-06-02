@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Producto</title>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+<body>
+    <header>
+        <%- include('partials/header.ejs') %>
+    </header>
+    <main>
+        <h1>Crear Nuevo Producto</h1>
+        <form action="/productos/crear" method="POST" enctype="multipart/form-data" class="form-crear-producto">
+            <div>
+                <label for="nombre">Nombre del producto:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" required min="0">
+            </div>
+            <div>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="talla">Talla:</label>
+                <select id="talla" name="talla" required>
+                    <option value="">Selecciona una talla</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+            <div>
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" placeholder="Ej: Negro, Blanco, etc." required>
+            </div>
+            <div>
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn-carrito">Crear Producto</button>
+        </form>
+    </main>
+</body>
+</html>

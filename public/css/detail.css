@@ -1,0 +1,261 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.breadcrumb {
+    font-size: 13px;
+    margin-bottom: 18px;
+    color: #888;
+}
+
+.detalle-producto-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.miniaturas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.miniaturas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.miniaturas li {
+    margin-bottom: 8px;
+}
+
+.miniaturas img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+.flecha-arriba,
+.flecha-abajo {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 4px 0;
+}
+
+.foto-principal {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin-right: 30px;
+}
+
+.foto-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+.foto-texto {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #888;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.info-producto {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 400px;
+    gap: 10px;
+}
+
+.info-producto h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.precio {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.tallas label,
+.colores label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.tallas div {
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.talla {
+    border: 1.5px solid #222;
+    border-radius: 3px;
+    padding: 3px 14px;
+    margin-right: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.talla:hover {
+    background: #222;
+    color: #fff;
+}
+
+.colores div {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 10px;
+    display: inline-block;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1.5px solid #bbb;
+    margin-right: 7px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: border 0.2s;
+    display: inline-block;
+}
+.color:last-child {
+    margin-right: 0;
+}
+
+.btn-carrito {
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: block;
+}
+.btn-carrito:hover {
+    background: #333;
+}
+
+.descripcion {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+.descripcion strong {
+    font-size: 15px;
+}
+
+.productos-relacionados {
+    margin-top: 40px;
+}
+
+.productos-relacionados h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.relacionados-lista {
+    display: flex;
+    gap: 18px;
+}
+
+.relacionado {
+    width: 140px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 10px 8px 12px 8px;
+    text-align: center;
+    position: relative;
+}
+
+.relacionado img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    background: #fff;
+}
+
+.relacionado p {
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.corazon {
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.corazon:hover {
+    color: #e74c3c;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .detalle-producto-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .foto-principal {
+        margin: 0 auto 20px auto;
+    }
+    .info-producto {
+        max-width: 100%;
+    }
+    .relacionados-lista {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

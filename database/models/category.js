@@ -1,26 +1,30 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class category extends Model {
-    static associate(models) {
-      // Relación: una categoría tiene muchos productos.
-      category.hasMany(models.product, {
-        foreignKey: 'id_categoria'
-      });
+module.exports = (sequelize, DataTypes)=> {
+
+    const alias = 'Category'
+
+    const cols = {
+        name: {
+            type: DataTypes.STRING(255),
+            validate:{
+                min: 3
+            }
+        },
     }
-  }
-  category.init({
-    id_categoria: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true
-    },
-    categoria: DataTypes.STRING
-  }, {
-    sequelize,
-    modelName: 'category',
-  });
-  return category;
-};
+
+    const config = {
+        tableName: 'categories',
+        timestamps: false,
+        paranoid:false
+    }
+
+    const Category = sequelize.define(alias, cols, config);
+
+    Category.associate = (model)=>{
+        Category.hasMany(model.Product,{
+            as: "users",
+            foreignKey: "category_id"
+        })
+    };
+
+    return Category;
+}

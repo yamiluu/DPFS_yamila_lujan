@@ -1,8 +1,10 @@
 const express = require('express');
 const path = require('path');
 const app = express(); // SOLO UNA VEZ
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
-const PORT = 3000;
+const port = 3000;
 
 // Configuración de la vista
 app.set('view engine', 'ejs');
@@ -25,19 +27,28 @@ app.get('/crear', (req, res) => {
 });
 
 // Rutas de productos y otros
-// const productsWRouter = require('./routes/productsW');
-// const productsHRouter = require('./routes/productsH');
+const productsRouter = require('./routes/products.routes');
 // const accesoriosRouter = require('./routes/accesorios');
 // const carritoRouter = require('./routes/carrito');
 
-// app.use('/products/women', productsWRouter);
-// app.use('/products/men', productsHRouter);
+app.use('/products', productsRouter);
 // app.use('/accesorios', accesoriosRouter);
 // app.use('/carrito', carritoRouter);
 
-// Servidor
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});
-
 module.exports = app;
+
+//console.log('http://localhost:'+ port)
+const db = require('./database/models');
+
+app.listen(port, async()=>console.log(
+  
+  await db.sequelize.sync({force: true}), 
+  console.log('All models were synchronized successfully'),
+  
+  "Servidor corriendo en el puerto: http://localhost:" + port
+))
+
+// Importar modelos
+
+// const File = db.File;
+// const User = db.User;

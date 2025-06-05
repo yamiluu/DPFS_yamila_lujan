@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('partials/head') %>
+<%- include('../partials/head', {style : 'general', stylemain : 'register'})  %>
 <body>
     
-    <%- include('partials/header') %>
+    <%- include('../partials/header') %>
     
     <div class="login-register">
-    <a href="login.html">Iniciar Sesión</a>
-    <a href="register.html" class="active"> Crear Cuenta </a>
+    <a href="/users/login">Iniciar Sesión</a>
+    <a href="/users/register" class="active"> Crear Cuenta </a>
     </div>
 
     <!--Formulario.-->
@@ -16,16 +16,21 @@
         <input type="password" name="password" id="password" placeholder="* Contraseña" required>
         <input type="password" name="password" id="password" placeholder="* Confirmar Contraseña" required>
 
+        <div class="checkbox">
         <input type="checkbox" name="register" id="register" required class="checkbox">
         <label for="register">Al registrarse, aceptas nuestros términos y condiciones. Además, sus datos estarán protegidos.</label>
+        </div>
 
         <button type="submit">Crear Cuenta</button>
   <!----<input type="reset" value="Limpiar"> -->
     </form>
 
-    <div class="circle"></div>
-    <a href="#"><img src="/public/imgs/Google - Wilhelm..png" alt="Icono de Google"></a>
-    <a href="#"><img src="/public/imgs/Facebook - Wilhelm..png" alt="Icono de Facebook"></a>
+    <div class="social-icons">
+    <a href="#"><img src="/imgs/Google - Wilhelm..png" alt="Icono de Google"></a>
+    <a href="#"><img src="/imgs/Facebook - Wilhelm..png" alt="Icono de Facebook"></a>
+    </div>
     
+    <%- include('../partials/footer') %>
+
 </body>
 </html>

@@ -7,10 +7,10 @@ module.exports = {
       {
         id: 1,
         name: 'remera',
-        description: 'Remera blanca',
+        description: 'Remera Negra',
         price: '5',
         category_id: 2,
-        image: 'remera-blanca.jpeg'
+        image: 'remera-negra.png'
       },
       {
         id: 2,

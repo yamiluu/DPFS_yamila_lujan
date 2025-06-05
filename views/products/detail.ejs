@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Detalle de Producto</title>
-    <link rel="stylesheet" href="/css/general.css">
-    <link rel="stylesheet" href="/css/detail.css">
-</head>
-<body>
+
+ <%- include('../partials/head.ejs', {style : 'general', stylemain : 'detail'})  %>
+
+ <body>
     <header>
-        <%- include('partials/header.ejs') %>
+        <%- include('../partials/header.ejs') %>
     </header>
     <main>
         <nav class="breadcrumb">
             <a href="#">Remeras</a> &gt; 
             <a href="#">Mujer</a> &gt; 
-            <span>Remera Oversize</span>
+            <span><%=modelFound.name%></span>
+
         </nav>
         <div class="detalle-producto-container">
-            <aside class="miniaturas">
+            <!-- <aside class="miniaturas">
                 <button class="flecha-arriba">&#9650;</button>
                 <ul>
-                    <li><img src="/img/img_default.jpg" alt="Miniatura 1"></li>
-                    <li><img src="/img/img_default.jpg" alt="Miniatura 2"></li>
-                    <li><img src="/img/img_default.jpg" alt="Miniatura 3"></li>
-                    <li><img src="/img/img_default.jpg" alt="Miniatura 4"></li>
+                    <li><img src="/imgs/products/img_default.jpg" alt="Miniatura 1"></li>
+                    <li><img src="/imgs/products/img_default.jpg" alt="Miniatura 2"></li>
+                    <li><img src="/imgs/products/img_default.jpg" alt="Miniatura 3"></li>
+                    <li><img src="/imgs/products/img_default.jpg" alt="Miniatura 4"></li>
                 </ul>
                 <button class="flecha-abajo">&#9660;</button>
-            </aside>
+            </aside> -->
+            
             <div class="foto-principal">
-                <img src="/img/img_default.jpg" alt="Foto del Producto">
-                <span class="foto-texto">Foto del Producto</span>
+                <img src="/imgs/products/<%=modelFound.image%>" alt="Foto del Producto">
+                
             </div>
             <section class="info-producto">
-                <h1>Remera Oversize</h1>
-                <p class="precio">$0000 ARG</p>
+                <h1><%=modelFound.name%></h1>
+                <p class="precio">$<%=modelFound.price%> ARG</p>
                 <div class="tallas">
                     <label>Selecciona Talla:</label>
                     <div>
@@ -55,16 +54,16 @@
                 <button class="btn-carrito">Añadir al Carrito</button>
                 <div class="descripcion">
                     <p><strong>Descripción del Producto:</strong><br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                     <%=modelFound.description%> </p>
                     <p><strong>Materiales:</strong> 80% algodón, 20% elastano.</p>
                 </div>
             </section>
         </div>
-        <section class="productos-relacionados">
+  <!--     <section class="productos-relacionados">
             <h2>Productos Relacionados:</h2>
             <div class="relacionados-lista">
                 <div class="relacionado">
-                    <img src="/img/img_default.jpg" alt="Foto Producto">
+                    <img src="/imgs/img_default.jpg" alt="Foto Producto">
                     <p>Remera X<br>$0000 ARG</p>
                     <span class="corazon">&#9829;</span>
                 </div>
@@ -74,27 +73,20 @@
                     <span class="corazon">&#9829;</span>
                 </div>
                 <div class="relacionado">
-                    <img src="/img/img_default.jpg" alt="Foto Producto">
+                    <img src="/imgs/img_default.jpg" alt="Foto Producto">
                     <p>Remera X<br>$0000 ARG</p>
                     <span class="corazon">&#9829;</span>
                 </div>
                 <div class="relacionado">
-                    <img src="/img/img_default.jpg" alt="Foto Producto">
+                    <img src="/imgs/img_default.jpg" alt="Foto Producto">
                     <p>Remera X<br>$0000 ARG</p>
                     <span class="corazon">&#9829;</span>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer>
-        <div class="footer-info">
-            <span>Acerca de Nosotros</span>
-            <span class="footer-redes">
-                <i class="ri-facebook-fill"></i>
-                <i class="ri-twitter-fill"></i>
-                <i class="ri-google-fill"></i>
-            </span>
-        </div>
-    </footer>
+
+     <%- include('../partials/footer.ejs') %>
+
 </body>
 </html>

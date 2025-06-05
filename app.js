@@ -31,6 +31,9 @@ const productsRouter = require('./routes/products.routes');
 // const accesoriosRouter = require('./routes/accesorios');
 // const carritoRouter = require('./routes/carrito');
 
+const usersRouter = require('./routes/users.routes');
+app.use('/users', usersRouter);
+
 app.use('/products', productsRouter);
 // app.use('/accesorios', accesoriosRouter);
 // app.use('/carrito', carritoRouter);
@@ -42,8 +45,8 @@ const db = require('./database/models');
 
 app.listen(port, async()=>console.log(
   
-  await db.sequelize.sync({force: true}), 
-  console.log('All models were synchronized successfully'),
+ // await db.sequelize.sync({force: true}), 
+ // console.log('All models were synchronized successfully'),
   
   "Servidor corriendo en el puerto: http://localhost:" + port
 ))

@@ -10,6 +10,14 @@ module.exports = {
     res.redirect('/users/' + req.body.email);
   },
 
+   login: async (req, res) => {
+    res.render('users/login');
+  },
+
+  register: async (req, res) => {
+    res.render('users/register');
+  },
+
   detail: async (req, res) => {
     const usuario = await user.findByPk(req.params.email);
     res.render('users/detail', { user: usuario });

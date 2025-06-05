@@ -128,7 +128,7 @@ module.exports = {
         try {
             const modelFound = await db.Product.findByPk(req.params.id);
 
-            res.render('detail', { modelFound });
+            res.render('products/detail.ejs', { modelFound });
         } catch (error) {
             console.log(error);
         }

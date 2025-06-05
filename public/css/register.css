@@ -1,0 +1,144 @@
+/* ESTILO GENERAL - LOGIN */
+body {
+ display: flex; 
+ flex-direction: column; 
+ align-items: center; 
+/*  justify-content: center; */
+ height: 100vh; 
+ justify-content: space-between;
+}
+
+/* LOGIN Y REGISTRO: */
+.login-register {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+
+.login-register a {
+  color: #8c6849 !important;
+  text-decoration: none !important;
+  font-weight: bold;
+  margin: 0 10px;
+  font-size: 25px;
+}
+
+.login-register a.active {
+  border-bottom: 2px solid #8c6849; /* Subrayado para el activo */
+}
+
+.login-register a:hover {
+  border-bottom: 2px solid #8c6849;
+}
+
+/* FORMULARIO - LOGIN */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  padding: 20px !important;
+  background-color: #731702;
+  gap: 20px;
+}
+
+form input {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  width: 35%;
+  padding: 8px;
+  background-color: #fff8de;
+  color: #731702;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #cf9d72;
+}
+
+/* OLVIDAR CONTRASEÑA - LOGIN */
+form a {
+  color: #fff8de;
+  font-size: 15px;
+  margin: 0;
+  align-self: flex-start;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+form a:hover {
+  text-decoration: underline;
+  color: #cf9d72;
+}
+
+/* ICONOS - LOGIN*/
+form img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+form img:hover {
+  filter: brightness(80%);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.social-icons::before,
+.social-icons::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #8c6849;
+}
+
+.social-icons::before {
+  margin-right: 15px; /* Espaciado entre la línea izquierda y el primer icono. */
+}
+
+.social-icons::after {
+  margin-left: 15px; /* Espaciado entre la línea derecha y el último icono. */
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 15px;
+}
+.social-icons img {
+  padding-top: 60px;
+}
+
+/* REGISTER: */
+
+.checkbox {
+  color: #fff8de;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.checkbox input {
+    width: 15px;
+    height: 15px;
+}
+
+.checkbox label {
+    
+}
